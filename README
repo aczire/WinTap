@@ -1,0 +1,8 @@
+WinTap is a packet snifer and soft-tap developed to mirror packets flowing through an ethernet interface. It is purely based on the NDIS which alows us to snif packets nd rewrites them to a second interface acting as a soft-tap. WinTap consist of two components,
+
+    1. NDIS 6.0 based protocol driver.
+    2. Usermode soft-tap.
+
+These two act in tandem to create a soft-tap, where the protocol driver sniffs the traffic and delivers to the user mode application. While the user mode application does the redirection logic and returns the packets to be rewritten to second interface.
+
+Please read the description.htm for more details.
